@@ -4,6 +4,7 @@ import ImageSlider from "../components/ImageSlider";
 import AboutUs from "../components/AboutUs";
 import Info from "../components/WhyUs"; 
 import ContactUs from "../components/ContactUs";
+
 const HomePage = () => {
     return (
         <>
@@ -12,6 +13,7 @@ const HomePage = () => {
         <AboutUs />
         <Info />
        <ContactUs />
+        
         </>
     );
 }

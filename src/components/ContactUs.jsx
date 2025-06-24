@@ -1,50 +1,67 @@
 import ian from '../assets/ian.jpg';
-import { FaMapMarkerAlt, FaClock, FaPhoneAlt } from 'react-icons/fa';
+import {
+  FaMapMarkerAlt,
+  FaClock,
+  FaPhoneAlt,
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter
+} from 'react-icons/fa';
 
 export default function ContactUs() {
   const person = {
     name: 'Ian Kyle MUGISHA IGANZE',
     title: 'Co‑Founder & Head of Community',
-    img: ian,
+    img: ian
   };
 
   return (
-    <section className="flex md:flex-row flex-col justify-start mx-10 px-4 py-12">
-    <div className="flex-1 max-w-lg mx-8 bg-white p-6 md:p-8">
-      <div className="max-w-sm  bg-white rounded-xl shadow-lg overflow-hidden">
+    <section className=" bg-black" id='contact'>
+      <div className='flex flex-col md:flex-row justify-start mx-6 px-4 py-12 w-full sm:gap-5 gap-10'>
+      <div className="flex-1 md:max-w-sm mx-10 bg-white p-6 md:p-8 rounded-xl shadow-lg">
         <img
           src={person.img}
           alt={person.name}
-          className="w-full h-56 object-cover"
+          className=" w-40 md:w-60 h-32 md:h-52 object-cover rounded-md mb-6"
         />
-        <div className="p-6 text-center">
-          <h3 className="text-2xl font-bold text-gray-800">
-            {person.name}
-          </h3>
-          <p className="text-indigo-600 mb-4">{person.title}</p>
+        <div className="text-left mb-6">
+          <h3 className="text-2xl font-bold text-gray-800">{person.name}</h3>
+          <p className="text-indigo-600">{person.title}</p>
+        </div>
+</div>
+       
+        <div className="flex md:flex-col flex-col justify-start text-sm p-14 gap-6 text-white">
+          <div className="flex items-center gap-2">
+            <FaMapMarkerAlt className="h-4 w-4 text-white" />
+            <p>Excella School</p>
           </div>
+          <div className="flex items-center gap-2">
+            <FaClock className="h-4 w-4 text-white" />
+            <p> Working Hours: Mon–Fri: 08:00–17:00</p>
           </div>
-            </div>
-          {/* <hr className="border-t-2 border-indigo-100 mb-4" /> */}
-          <div className="space-y-2 text-gray-700">
-           <FaMapMarkerAlt className="text-black mr-2" /><span>Excella School</span>
-             <FaClock className="text-black mr-2" />
-        <span>Monday–Saturday, 8 AM–6 PM</span>
-             <FaPhoneAlt className="text-black mr-2" />
-        <span>+250 78 123 4567</span>
+          <div className="flex items-center gap-2">
+            <FaPhoneAlt className="h-4 w-4 text-white" />
+            <p>0782‑220‑995</p>
           </div>
-          {/* <div className="flex justify-center space-x-4 mt-4">
-            <a href="#" className="text-blue-600 hover:text-blue-800">
-              Instagram
-            </a>
-            <a href="#" className="text-blue-700 hover:text-blue-900">
-              Facebook
-            </a>
-            <a href="#" className="text-blue-500 hover:text-blue-700">
-              Twitter
-            </a> */}
-          
-      </section>
-   
+        </div>
+      
+
+
+      <div className=" flex md:flex-row flex-col justify-start text-sm  pl-14 pt-96 pr-16 gap-6 ">
+        <a href="#home" target="_blank" rel="noopener noreferrer" className='text-white font-bold'>HOME</a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <FaFacebookF className="h-6 w-6 text-blue-600 hover:scale-110 transition-transform" />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="h-6 w-6 text-pink-500 hover:scale-110 transition-transform" />
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <FaTwitter className="h-6 w-6 text-blue-400 hover:scale-110 transition-transform" />
+        </a>
+      </div>
+      </div>
+       <hr className="border-white w-full md:w-full mb-6" />
+      <p className="text-center text-sm text-white pb-3">Copyright © 2025 Debate to Educate</p>
+    </section>
   );
 }
