@@ -11,7 +11,7 @@ import {
 export default function ContactUs() {
   const person = {
     name: 'Ian Kyle MUGISHA IGANZE',
-    title: 'Co‑Founder & Head of Community',
+    title: 'Head of Community',
     img: ian
   };
 
