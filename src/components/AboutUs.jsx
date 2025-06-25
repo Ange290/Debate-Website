@@ -38,15 +38,15 @@ export default function AboutUs() {
           <hr className="border-yellow-500 w-16 mx-auto mb-6" />
           <div className="space-y-2 text-gray-700 text-lg leading-relaxed">
             <p>1 Team (3 Debaters): <strong>20,000 RWF</strong></p>
-            <p>2 Teams (6 Debaters): <strong>50,000 RWF</strong></p>
-            <p>3 Teams (9 Debaters): <strong>60,000 RWF</strong></p>
-            <p>4 Teams (12 Debaters): <strong>75,000 RWF</strong></p>
+            <p>2 Teams (3 Debaters): <strong>24,000 RWF</strong></p>
+            <p>3 Teams (3 Debaters): <strong>40,000 RWF</strong></p>
+            <p>4 Teams (3 Debaters): <strong>55,000 RWF</strong></p>
           </div>
         </div>
       </div>
 
       <p className="mt-6 text-center text-gray-600 italic">
-        +5,000 RWF per additional person (meals & logistics)
+        Extra people, petron and and other student fans is 5,000 RWF for meals & logistics 
       </p>
     </section>
   );
